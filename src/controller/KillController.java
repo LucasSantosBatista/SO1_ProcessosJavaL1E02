@@ -87,9 +87,9 @@ public class KillController {
 		
 		String process = "";
 		if (osNome.contains("Windows")) {
-			process = "TASKKILL /PID ";
+			process = "TASKKILL /IM ";
 		} else {
-			process = "kill -9 ";
+			process = "pkill -f ";
 		}
 		
 		StringBuffer buffer = new StringBuffer();
